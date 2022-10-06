@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- cuerpo -->
+    <body>
+        <header class="encabezado">
+            <img src="imagenes/ahorcado.png" class="ahorcadoCompleto">
+            <img src="imagenes/LogoOracleOne.png" class="LogoOracleOne">
+        </header>
+
+        <main class="ahorcado">
+            <section class="logo">
+              <!-- personalizacion de titulo -->
+              <img class="logoImg" src="imagenes/logo.svg" alt="logo de alura">
+              <h1 class="title" data-text="Juego del Ahorcado">Juego del Ahorcado</h1>
+            </section>
+
+            <!-- botones principales -->
+            <section class="botones-home" id="div-desaparece">
+                <button class="btn-iniciar" type="buttom" id="iniciar-juego" onclick="iniciarJuego()">Iniciar</button>
+                <button class="btn-agregar-palabra" type="buttom" id="agregar-palabra" onclick="agregarPalabra()">Agregar palabra</button>
+            </section>
+            
+            <!-- pantalla de agregado -->
+            <section id="div-aparece-agregar" class="aparece-agregar">
+                <textarea placeholder="Ingrese el texto aquí..." class="campo-texto" id="texto-recibido"></textarea>
+        
+                <div class="mensaje-advertencia">
+                    <img src="imagenes/!.png" alt="simbolo de advertencia" class="simbolo">
+                    <p class="mensaje-letras">Solo letras y sin acentos</p>
+                </div>
+                
+                <div class="botones-para-agregar-palabra">
+                    <button class="guardar-empezar" type="submit" id="guardar-empezar" onclick="guardarEmpezar()">Guardar</button>
+                    <button class="cancelar" type="submit" id="cancelar" onclick="cancelar()">cancelar</button>
+                </div>
+            </section>
+
+            <!-- dibujar palabras y muñeco -->
+            <section class="canvas" id="div-aparece-ahorcado">
+               <!--panel de dibujo  -->
+                <div class="subrayado">
+                  <canvas id="ahorcadero" width="600" height="600"></canvas> 
+                </div>
+                <!-- boton para nuevo juego del ahorcado -->
+                <div class="botones-div-canvas">
+                    <button class="btn-nuevo-juego" type="submit" id="nuevo-juego" onclick="nuevoJuego()">Nuevo juego</button>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <!-- pie de pagina -->
+    <footer>
+        <div class="pie">
+            <nav> 
+                <ul class="pie-pagina">             
+                    <li><a href="https://github.com/jebotero" target="_blank"><img src="imagenes/github.png" alt="logo github" class="github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jaime-eduardo-botero-gomez-43105a4a/" target="_blank"><img src="imagenes/linkedin.png" alt="logo linkedin" class="linkedin"></a></li>                    
+                    <li><a href="https://www.facebook.com/jebotero" target="_blank"><img src="imagenes/facebook.png" alt="logo linkedin" class="facebook"></a></li>
+                    <li><p class="copyright">&copy Copyright Jaime Eduardo Botero Gómez - 2022</p></li>    
+                </ul> 
+            </nav>
+            
+         </div>   
+            
+    </footer>
+
+    <script src="js/ahorcadero.js"></script>
+    <script src="js/canvas.js"></script>
+
+
+</html>

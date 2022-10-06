@@ -1,0 +1,101 @@
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.pie-pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guardar-empezar{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cancelar{
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-iniciar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-agregar-palabra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*.btn-cancelar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}*/
+
+.botones-div-canvas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-nuevo-juego{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botones-div-canvas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cancelar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.guardar-empezar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.botones-para-agregar-palabra{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.mensaje-advertencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mensaje-letras{
+    flex-direction: row;
+    position: static;
+}
+
+
+
